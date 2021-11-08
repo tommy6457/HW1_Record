@@ -16,20 +16,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsx-EG-eze">
-                                <rect key="frame" x="158" y="347" width="100" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsx-EG-eze">
+                                <rect key="frame" x="157" y="432.5" width="100" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="錄製Gif作業"/>
+                                <connections>
+                                    <segue destination="SHf-Dv-Vbv" kind="show" id="FaR-k6-0WI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dsx-EG-eze" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPg-jG-26T"/>
+                            <constraint firstItem="Dsx-EG-eze" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ccg-ee-rRA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Vx-VI-C16">
+            <objects>
+                <viewController id="SHf-Dv-Vbv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oFv-14-PXI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第二頁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzl-UX-yTF">
+                                <rect key="frame" x="181" y="410.5" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xsv-po-6S7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uzl-UX-yTF" firstAttribute="centerY" secondItem="oFv-14-PXI" secondAttribute="centerY" id="FTW-8f-Xfv"/>
+                            <constraint firstItem="Uzl-UX-yTF" firstAttribute="centerX" secondItem="oFv-14-PXI" secondAttribute="centerX" id="V2n-pU-KuH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZSY-VX-mfW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjA-WN-sqz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="84"/>
         </scene>
     </scenes>
     <resources>
